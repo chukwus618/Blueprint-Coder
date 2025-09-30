@@ -4,45 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blueprint Coder</title>
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <script src="script.js"></script>
+  <script defer src="header.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="footer.js"></script>
 </head>
 <body>
  <header>
     <svg id="hamburger" viewBox="0 0 100 100" width="40">
-    <g class="hamburger-lines">
-     <rect class="line-top" width="80" height="10" x="10" y="25" rx="5"></rect>
-     <rect class="line-middle" width="80" height="10" x="10" y="45" rx="5"></rect>
-     <rect class="line-bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
-    </g>
+     <g class="hamburger-lines">
+       <rect class="line-top" width="80" height="10" x="10" y="25" rx="5"></rect>
+       <rect class="line-middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+       <rect class="line-bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+     </g>
     </svg>
     <nav id="mobile-nav">
+      <a href="index.html" id="logo">
+        <img src="assets/images/Blueprint-logo.svg" alt="Blueprint-Coder logo">
+      </a> 
       <button type="button" aria-label="close-menu" title="exit" id="close-btn"><img src="assets/icons/close-icon.svg" alt="close"></button>
       <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#course-section">Courses</a></li>
-        <li><a>Sponsor</a></li>
-        <li><a>Blogs</a></li>
-        <li><a>Contact</a></li>
+        <li class="nav-links"><a href="index.html">Home</a></li>
+        <li class="nav-links"><a href="about.html">About</a></li>
+        <li class="nav-links"><a href="#course-section">Courses</a></li>
+        <li class="nav-links"><a>Sponsor</a></li>
+        <li class="nav-links"><a>Contact</a></li>
       </ul>
+      <button id="nav-signupbtn" type="button" aria-label="Sign-Up">Sign Up</button>
     </nav>
+  </header>
+  <main>
    <p id="greetingpara">Hello! Developers</p>
    <h1>Welcome to Blueprint Coder</h1>
    <p>A platform that gives you more than lessons — we give you the blueprint to code, create, and launch your future in tech.</p>
    <p>You are at the right place to start your coding journey.<br><i>One of Nigeria's top tech-tutoring and online coding academy 💻🎓 </i></p>
-  </header>
+  </main>
   <section id="course-section">
     <h2>Our Courses</h2>
     <div class="line"></div>
+   <section id="course-container">
+   </section>
   </section>
   <section id="featured-tutors">
-    <h3>Featured Tutors</h3>
-    <div class="line"></div>
-    </section>
-  </section> 
+   <h3>Featured Tutors</h3>
+   <div class="line"></div>
+   <section id="tutors-container">
+   </section>
+  </section>
+  <footer>
+     <h5>Partners</h5>
+     <div class="line"></div>
+     <figure id="partner-logos">
+       <img src="assets/images/mindbyte.svg" alt="Mindbyte-logo">
+       <img src="assets/images/Techtitans-logo.svg" alt="Tech-Titans-logo">
+       <img src="assets/images/SmartPrime-logo.svg" alt="Smartprime-logo">
+       <img src="assets/images/midasbox.svg" alt="Midasbox-logo">
+     </figure>
+     <p>Follow Us for More</p>
+     <section id="media-icons">
+       <a href="facebook.com"><img src="assets/icons/facebook-logo.png" alt="facebook-logo"></a>
+       <a href="x.com"><img src="assets/icons/x.svg" alt="x-logo"></a>
+     </section>
+     <p>© <span id="current-year"></span> Blueprint Coder. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
