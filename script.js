@@ -44,41 +44,42 @@ const tutorsData = [
 
 const courseCards = [
   {
-    image: 'assets/icons/frontend.png',
+    image: 'assets/icons/frontend.svg',
     title: 'Front-end Development',
     description: 'Master core technologies like HTML, CSS, and JavaScript, and build a portfolio of real-world projects.',
   },
 
   {
-    image: 'assets/icons/backend.png',
+    image: 'assets/icons/backend.svg',
     title: 'Back-end Development',
     description: 'Master the essential back-end technologies by learning to build the server-side logic, manage databases, and create robust APIs with languages like Python, Node.js, and Java.',
   },
 
   {
-    image: 'assets/icons/fullstack.png',
+    image: 'assets/icons/fullstack.svg',
     title: 'Full-Stack Development',
     description: 'Master both the front-end and back-end by learning to build the complete stack, from user-facing interfaces to server-side logic and databases.',
   },
 
   {
-    image: 'assets/icons/UIUX.png',
+    image: 'assets/icons/UIUX.svg',
     title: 'UI/UX',
     description: 'Master the art of a full design process, from user research and wireframing to prototyping and high-fidelity mockups, using industry-standard tools like Figma and Sketch.',
   },
 
   {
-    image: 'assets/icons/jsframework.png',
+    image: 'assets/icons/jsframework.svg',
     title: 'Modern Javascript Framework',
     description: 'Master a modern JavaScript framework by learning to build dynamic, component-based user interfaces and single-page applications with React, Vue or Angular.',
   },
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
-  const tutorsContainer = document.getElementById('featured-tutors');
-  tutorsData.slice(0, 2).forEach((tutor) => {
+  const tutorsContainer = document.getElementById('tutors-container');
+  tutorsData.forEach((tutor, index) => {
+    const extraTutors = index >= 2 ? 'hidden-tutor' : '';
     const tutorHTML = `
-      <section class="tutor-info">
+      <section class="tutor-info ${extraTutors}">
         <img src="${tutor.image}" class="tutor-img" alt="${tutor.name}">
         <section class="tutor-details">
           <strong>${tutor.name}</strong>
@@ -94,22 +95,15 @@ document.addEventListener('DOMContentLoaded', () => {
   seeMoreBtn.innerHTML = 'See More Tutors<i class="fa-solid fa-chevron-down"></i>';
   tutorsContainer.appendChild(seeMoreBtn);
   seeMoreBtn.addEventListener('click', () => {
-    tutorsData.slice(2).forEach((tutor) => {
-      const tutorHTML = `
-       <section class="tutor-info">
-         <img src="${tutor.image}" class="tutor-img" alt="${tutor.name}">
-         <section class="tutor-details">
-           <strong>${tutor.name}</strong>
-           <p>${tutor.status}</p>
-           <p>${tutor.about}</p>
-         </section>
-       </section>`;
-      tutorsContainer.insertAdjacentHTML('beforeend', tutorHTML);
+    const hiddenTutors = document.querySelectorAll('.hidden-tutor');
+    hiddenTutors.forEach((tutor) => {
+      tutor.classList.remove('hidden-tutor');
     });
     seeMoreBtn.style.display = 'none';
   });
 
-  const courseCardContainer = document.getElementById('course-section');
+  const courseSection = document.getElementById('course-section');
+  const courseCardContainer = document.getElementById('course-container');
   courseCards.forEach((card) => {
     const cardHTML = `
       <section class="course-cards">
@@ -122,19 +116,5 @@ document.addEventListener('DOMContentLoaded', () => {
   const signUpBtn = document.createElement('button');
   signUpBtn.id = 'signup-btn';
   signUpBtn.textContent = 'Sign Up to Start';
-  courseCardContainer.appendChild(signUpBtn);
-
-  const menu = document.getElementById('hamburger');
-  const closeBtn = document.getElementById('close-btn');
-  const mobileNav = document.getElementById('mobile-nav');
-  const body = document.querySelector('body');
-  menu.addEventListener('click', () => {
-    mobileNav.classList.add('show');
-    body.style.overflow = 'hidden';
-  });
-
-  closeBtn.addEventListener('click', () => {
-    mobileNav.classList.remove('show');
-    body.style.overflow = 'scroll';
-  });
+  courseSection.appendChild(signUpBtn);
 });
