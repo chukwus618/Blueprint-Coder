@@ -49,13 +49,14 @@
 - **Web Development Course Setup**
 - **Responsive Design**
 - **SEO Optimization**
-- **Clean and Semantic Html Structure**
+- **Clean and Semantic HTML Structure**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - https://chukwus618.github.io/Blueprint-Coder
+- https://www.loom.com/share/5bac062d23684ab18659ae8c99b4920a?sid=20aeb3c9-edce-48ed-989b-9ea4b177aa6f
 
 
 <!-- GETTING STARTED -->
@@ -66,7 +67,7 @@ To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+To run this project, you need:
 
 - A web browser (Chrome, Firefox, Safari, etc.)
 - Git installed on your machine
@@ -91,7 +92,7 @@ cd Blueprint-Coder
 
 ### Deployment
 
-You can deploy this project using:Github
+You can deploy this project using GitHub
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -121,7 +122,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project feel free to backup project with relevant ideas.
+If you like this project, you can just go ahead and back the project with relevant ideas.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
