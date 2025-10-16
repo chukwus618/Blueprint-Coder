@@ -52,28 +52,27 @@ header p ~ p {
 .course-cards {
   display: flex;
   gap: 10px;
-  background-color: rgba(255 255 255 / 5%);
+  background-color: rgba(255 255 255 / 10%);
   padding: 10px;
   margin: 10px;
-  border-radius: 10px;
 }
 
 #course-section {
-  background-color: #272a31;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  padding-bottom: 80px;
+  background-image: url("assets/images/coursesection.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 55px 0;
 }
 
 #course-section .line {
-  margin-top: -35px;
+  margin-bottom: 35px;
 }
 
 #course-section > h2 {
   text-align: center;
   color: #fff;
-  margin-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 12px;
 }
 
 #course-description {
@@ -89,14 +88,13 @@ header p ~ p {
   display: block;
   padding: 20px;
   background-color: #ec5242;
-  border-radius: 10px;
   width: 80%;
   cursor: pointer;
   margin: auto;
   font-size: 1.3em;
   color: #fff;
   margin-top: 55px;
-  border: 1px solid #fff;
+  border: none;
 }
 
 #signup-btn:hover {
@@ -157,7 +155,7 @@ header p ~ p {
 #featured-tutors > h3 {
   text-align: center;
   color: #272a31;
-  margin-bottom: 15px;
+  margin: 0;
   font-size: 1.5em;
 }
 
@@ -232,12 +230,14 @@ header p ~ p {
     padding-top: 200px;
   }
 
+  #course-section {
+    padding: 80px 150px;
+  }
+
   #course-container {
     display: flex;
     gap: 5px;
     justify-content: space-around;
-    padding-left: 150px;
-    padding-right: 150px;
     align-items: stretch;
     margin: auto;
     flex-wrap: wrap;
@@ -261,6 +261,7 @@ header p ~ p {
   #signup-btn {
     display: block;
     margin: auto;
+    margin-top: 50px;
     background-color: inherit;
     border: none;
     text-decoration: underline;
