@@ -80,10 +80,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const extraTutors = index >= 2 ? 'hidden-tutor' : '';
     const tutorHTML = `
       <section class="tutor-info ${extraTutors}">
-        <img src="${tutor.image}" class="tutor-img" alt="${tutor.name}">
+        <figure class="tutorimage-container">
+         <img src="${tutor.image}" class="tutor-img" alt="${tutor.name}">
+        </figure>
         <section class="tutor-details">
           <strong>${tutor.name}</strong>
           <p>${tutor.status}</p>
+          <hr class="thin-line">
           <p>${tutor.about}</p>
         </section>
       </section>`;
@@ -93,13 +96,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const seeMoreBtn = document.createElement('button');
   seeMoreBtn.id = 'seemore-btn';
   seeMoreBtn.innerHTML = 'See More Tutors<i class="fa-solid fa-chevron-down"></i>';
-  tutorsContainer.appendChild(seeMoreBtn);
+  if (tutorsData.length > 2) {
+    tutorsContainer.appendChild(seeMoreBtn);
+  }
   seeMoreBtn.addEventListener('click', () => {
-    const hiddenTutors = document.querySelectorAll('.hidden-tutor');
-    hiddenTutors.forEach((tutor) => {
-      tutor.classList.remove('hidden-tutor');
-    });
-    seeMoreBtn.style.display = 'none';
+    tutorsContainer.classList.toggle('tutors-expanded');
+
+    if (tutorsContainer.classList.contains('tutors-expanded')) {
+      seeMoreBtn.innerHTML = 'See Less Tutors<i class="fa-solid fa-chevron-up"></i>';
+    } else {
+      seeMoreBtn.innerHTML = 'See More Tutors<i class="fa-solid fa-chevron-down"></i>';
+    }
   });
 
   const courseSection = document.getElementById('course-section');
