@@ -34,18 +34,16 @@ header p ~ p {
 
 .line {
   width: 45px;
-  background-color: #ec5242;
-  height: 2px;
+  border: 2px solid #ec5242;
   border-radius: 100px;
   margin: auto;
 }
 
 .course-img {
-  width: auto;
+  width: 30px;
   height: 30px;
   object-fit: contain;
   object-position: center;
-  display: flex;
   align-self: center;
 }
 
@@ -77,11 +75,14 @@ header p ~ p {
 
 #course-description {
   color: #fff;
+  font-size: smaller;
+  margin: auto;
 }
 
 #course-section h3 {
   color: #ec5242;
   align-self: center;
+  font-size: medium;
 }
 
 #signup-btn {
@@ -120,43 +121,38 @@ header p ~ p {
 }
 
 #seemore-btn {
-  margin: auto;
   display: block;
   color: #272a31;
   font-size: 1.3em;
-  width: 90%;
+  width: calc(100% - 20px);
   background-color: inherit;
-  border: none;
+  border: 1px solid #272a31;
   padding: 10px;
   cursor: pointer;
-  margin-top: 20px;
-}
-
-#seemore-btn:hover {
-  border: 1px solid #272a31;
-  border-radius: 5px;
+  margin: 40px 10px;
 }
 
 #seemore-btn i {
   font-size: 1.4rem;
   margin-left: 20px;
+  color: #ec5242;
 }
 
 #seemore-btn:hover i {
   animation: fa-shake 1s infinite;
-  color: #ec5242;
 }
 
 #featured-tutors {
-  background-color: #fff5ee;
-  padding-bottom: 50px;
+  background-color: #fff;
+  padding: 55px 0 10px;
 }
 
 #featured-tutors > h3 {
   text-align: center;
   color: #272a31;
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.3em;
+  padding-bottom: 10px;
 }
 
 @keyframes fade-in-up {
@@ -174,9 +170,8 @@ header p ~ p {
 .tutor-info {
   display: flex;
   align-items: center;
-  gap: 15px;
-  padding: 10px;
-  padding-top: 50px;
+  gap: 20px;
+  padding: 50px 20px 0;
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   animation: fade-in-up 0.6s ease-out forwards;
   opacity: 0;
@@ -207,10 +202,45 @@ header p ~ p {
 }
 
 #featured-tutors img {
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
+  position: relative;
+}
+
+.tutorimage-container {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0;
+}
+
+.tutorimage-container::before {
+  background:
+    conic-gradient(
+      #fff 90deg,
+      #000 90deg 180deg,
+      #fff 180deg 270deg,
+      #000 90deg 270deg
+    );
+  background-size: 8px 8px;
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+}
+
+.thin-line {
+  color: #d3d3d3;
+  width: 20px;
+  margin: 0;
+  border-width: 1px;
+  border-style: solid;
 }
 
 .tutor-details {
@@ -219,10 +249,28 @@ header p ~ p {
 
 .tutor-details p:first-of-type {
   color: #ec5242;
+  margin: 10px 0;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.tutor-details p:last-of-type {
+  color: #272a31;
+  font-size: 11px;
+}
+
+strong {
+  font-weight: bold;
+  color: #272a31;
+  font-size: medium;
 }
 
 .hidden-tutor {
   display: none;
+}
+
+#tutors-container.tutors-expanded .hidden-tutor {
+  display: flex;
 }
 
 @media (min-width: 1200px) {
@@ -282,6 +330,29 @@ header p ~ p {
     padding-right: 150px;
   }
 
+  .tutor-details p:last-of-type,
+  .tutor-details p:first-of-type {
+    font-size: 14px;
+  }
+
+  .tutorimage-container::before {
+    background:
+      conic-gradient(
+        #fff 90deg,
+        #d3d3d3 90deg 180deg,
+        #fff 180deg 270deg,
+        #d3d3d3 90deg 270deg
+      );
+    background-size: 8px 8px;
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+  }
+
   .hidden-tutor {
     display: flex;
   }
@@ -308,7 +379,7 @@ header p ~ p {
     margin: 50px;
   }
 
-  .coursse-img {
+  .course-img {
     height: 50px;
   }
 }
