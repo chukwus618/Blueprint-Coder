@@ -14,6 +14,10 @@ html {
   margin: 8px 8px 8px 25px;
 }
 
+aside {
+  display: none;
+}
+
 #close-btn {
   position: fixed;
   top: 10px;
