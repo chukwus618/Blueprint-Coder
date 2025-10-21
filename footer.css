@@ -1,27 +1,31 @@
 footer {
-  background-color: #1c1c1c;
-  box-sizing: border-box;
-  padding: 30px 0 10px;
-  text-align: center;
   margin-top: 50px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#partners-container {
+  background-color: #272a31;
+  padding: 20px 0;
 }
 
 h5 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: 0;
-  color: #fff5ee;
+  color: #fff;
   padding-bottom: 10px;
 }
 
-footer p:first-of-type {
-  color: #fff5ee;
-  font-size: 1.1rem;
-  padding-top: 10px;
+h5 + .line {
+  margin-bottom: 50px;
 }
 
-footer p:last-of-type {
-  color: #fff;
-  font-size: small;
+footer p {
+  font-size: 12px;
+}
+
+footer p:first-of-type {
+  padding-top: 10px;
 }
 
 #partner-logos {
@@ -33,39 +37,56 @@ footer p:last-of-type {
 #partner-logos img {
   width: auto;
   object-fit: cover;
-  height: 50px;
+  height: 45px;
 }
 
-#media-icons {
+#main-footer {
   display: flex;
-  gap: 20px;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 25px;
 }
 
-#media-icons img {
-  width: 24px;
+#main-footer img {
+  width: 150px;
+}
+
+#trademark-info p:last-of-type {
+  display: none;
+  text-align: start;
 }
 
 @media (min-width: 1200px) {
+  h5 {
+    color: #d3d3d3;
+  }
+
   #partner-logos img {
     height: 100px;
   }
 
-  footer p:first-of-type {
-    font-size: 1.5em;
+  #partners-container {
+    padding: 55px 0;
   }
 
-  h5 {
-    font-size: 2em;
+  footer p {
+    font-size: 15px;
   }
 
-  footer p:last-of-type {
-    font-size: 16px;
+  #main-footer {
+    padding: 50px 0;
   }
-}
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  #partner-logos img {
-    height: 70px;
+  #main-footer img {
+    width: 200px;
+  }
+
+  #trademark-info {
+    flex: 0.5;
+    justify-items: flex-start;
+  }
+
+  #trademark-info p:last-of-type {
+    display: block;
   }
 }

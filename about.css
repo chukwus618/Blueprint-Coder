@@ -33,6 +33,10 @@ p {
   margin: auto;
 }
 
+footer p {
+  color: #272a31;
+}
+
 .impact-img + p {
   font-style: italic;
   margin-top: 0;
@@ -50,8 +54,7 @@ p {
 
 .line {
   width: 45px;
-  background-color: #ec5242;
-  height: 2px;
+  border: 2px solid #ec5242;
   border-radius: 100px;
   margin: auto;
 }
@@ -86,6 +89,10 @@ main {
   padding: 50px 15px 0;
 }
 
+#main-footer img:last-of-type {
+  display: none;
+}
+
 @media (min-width: 768px) {
   main {
     padding: 100px 150px 0;
@@ -109,6 +116,27 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  #main-footer img:first-of-type,
+  #partners-container {
+    display: none;
+  }
+
+  #main-footer img:last-of-type {
+    display: block;
+  }
+
+  #main-footer {
+    background-color: #272a31;
+  }
+
+  footer {
+    padding: 0;
+  }
+
+  footer p {
+    color: #fff;
   }
 }
 
