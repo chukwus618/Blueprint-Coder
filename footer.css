@@ -57,7 +57,7 @@ footer p:first-of-type {
 }
 
 @media (min-width: 1200px) {
-  h5 {
+  h6 {
     color: #d3d3d3;
   }
 
