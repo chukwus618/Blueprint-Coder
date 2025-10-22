@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardHTML = `
       <section class="course-cards">
         <img class="course-img" alt="${card.title}" src="${card.image}">
-        <h3>${card.title}</h3>
+        <h4>${card.title}</h4>
         <p id="course-description">${card.description}</p>
       </section>`;
     courseCardContainer.innerHTML += cardHTML;
