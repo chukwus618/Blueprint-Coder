@@ -17,59 +17,63 @@
   <script defer src="footer.js"></script>
 </head>
 <body>
- <header>
-    <svg id="hamburger" viewBox="0 0 100 100" width="40">
-     <g class="hamburger-lines">
-       <rect class="line-top" width="80" height="10" x="10" y="25" rx="5"></rect>
-       <rect class="line-middle" width="80" height="10" x="10" y="45" rx="5"></rect>
-       <rect class="line-bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
-     </g>
-    </svg>
-    <aside>
-      <img src="assets/icons/facebook-logo.png" alt="Facebook-logo">
-      <img src="assets/icons/x.svg" alt="X-logo">
-      <p>English</p>
-      <button type="button">My Page</button>
-      <button type="button">Logout</button>
-    </aside>
-    <nav id="mobile-nav">
-      <a href="index.html" id="logo">
-        <img src="assets/images/Blueprint-logo.svg" alt="Blueprint-Coder logo">
-      </a> 
-      <button type="button" aria-label="close-menu" title="exit" id="close-btn"><img src="assets/icons/close-icon.svg" alt="close"></button>
-      <ul>
-        <li class="nav-links"><a href="index.html">Home</a></li>
-        <li class="nav-links"><a href="about.html">About</a></li>
-        <li class="nav-links"><a href="#course-section">Courses</a></li>
-        <li class="nav-links"><a>Sponsor</a></li>
-        <li class="nav-links"><a>Contact</a></li>
-      </ul>
-      <button id="nav-signupbtn" type="button" aria-label="Sign-Up">Sign Up</button>
-    </nav>
-  </header>
-  <main>
-    <section id="hero-container">
-     <p id="greetingpara">Hello! Developers</p>
-     <h1>Welcome to Blueprint Coder</h1>
-     <p>A platform that gives you more than lessons — we give you the blueprint to code, create, and launch your future in tech.</p>
-     <p>You are at the right place to start your coding journey.<br><i>One of Nigeria's top tech-tutoring and online coding academy 💻🎓 </i></p>
-    </section>
-  </main>
+ <section id="hero-wrapper">
+    <header>
+      <svg id="hamburger" viewBox="0 0 100 100" width="40">
+        <g class="hamburger-lines">
+          <rect class="line-top" width="80" height="10" x="10" y="25" rx="5"></rect>
+          <rect class="line-middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+          <rect class="line-bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+        </g>
+      </svg>
+      <aside>
+        <img src="assets/icons/facebook-logo.png" alt="Facebook-logo">
+        <img src="assets/icons/x.svg" alt="X-logo">
+        <p>English</p>
+        <button type="button">My Page</button>
+        <button type="button">Logout</button>
+      </aside>
+      <nav id="mobile-nav">
+        <a href="index.html" id="logo">
+          <img src="assets/images/Blueprint-logo.svg" alt="Blueprint-Coder logo">
+        </a> 
+        <button type="button" aria-label="close-menu" title="exit" id="close-btn"><img src="assets/icons/close-icon.svg" alt="close"></button>
+        <ul>
+          <li class="nav-links"><a href="index.html">Home</a></li>
+          <li class="nav-links"><a href="about.html">About</a></li>
+          <li class="nav-links"><a href="#course-section">Courses</a></li>
+          <li class="nav-links"><a>Sponsor</a></li>
+          <li class="nav-links"><a>Contact</a></li>
+        </ul>
+        <button id="nav-signupbtn" type="button" aria-label="Sign-Up">Sign Up</button>
+      </nav>
+    </header>
+    <main>
+      <p id="greetingpara">Hello! Developers</p>
+      <h1>Welcome to Blueprint Coder</h1>
+      <section id="hero-info">
+        <p>A platform that gives you more than lessons — we give you the blueprint to code, create, and launch your future in tech.</p>
+        <p>You are at the right place to start your coding journey.<br><i>One of Nigeria's top tech-tutoring and online coding academy 💻🎓 </i></p>
+      </section>
+      <h2>2025.10.22(WED) ~ 23(THUR)</h2>
+      <p>@Blueprint-Coder Academy, Nigeria and more.</p>
+    </main>
+ </section>
   <section id="course-section">
-    <h2>Our Courses</h2>
+    <h3>Our Courses</h3>
     <hr class="line">
    <section id="course-container">
    </section>
   </section>
   <section id="featured-tutors">
-   <h3>Featured Tutors</h3>
+   <h5>Featured Tutors</h5>
    <hr class="line">
    <section id="tutors-container">
    </section>
   </section>
   <footer>
     <section id="partners-container">
-      <h5>Partners</h5>
+      <h6>Partners</h6>
       <hr class="line">
       <figure id="partner-logos">
         <img src="assets/images/mindbyte.svg" alt="Mindbyte-logo">
