@@ -15,71 +15,80 @@
     <script defer src="footer.js"></script>
 </head>
 <body>
-  <header>
-   <svg id="hamburger" viewBox="0 0 100 100" width="40">
-    <g class="hamburger-lines">
-     <rect class="line-top" width="80" height="10" x="10" y="25" rx="5"></rect>
-     <rect class="line-middle" width="80" height="10" x="10" y="45" rx="5"></rect>
-     <rect class="line-bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
-    </g>
-    </svg>
-    <nav id="mobile-nav">
-      <a href="index.html" id="logo">
-        <img src="assets/images/Blueprint-logo.svg" alt="Blueprint-Coder logo">
-      </a>
-      <button type="button" aria-label="close-menu" title="exit" id="close-btn"><img src="assets/icons/close-icon.svg" alt="close"></button>
-      <ul>
-        <li class="nav-links"><a href="index.html">Home</a></li>
-        <li class="nav-links"><a href="about.html">About</a></li>
-        <li class="nav-links"><a href="#course-section">Courses</a></li>
-        <li class="nav-links"><a>Blogs</a></li>
-        <li class="nav-links"><a>Contact</a></li>
-      </ul>
-      <button id="nav-signupbtn" type="button" aria-label="Sign-Up">Sign Up</button>
-    </nav>
-  </header>
-  <main>
-    <p id="greetingpara">Hello! Developers</p>
-    <h1>BLUEPRINT CODER</h1>
-    <p><strong>Founded</strong> September, 2025<br>
-      <strong>CEO</strong> Emmanuel John<br>
-      <strong>Location</strong> Nigeria (Global Access)
-    </p>
-
-    <hr>
-   <section id="who-we-are">
-     <h2>Who we Are</h2>
-     <p>At<strong> 🌍 Blueprint Coder</strong>, we believe coding is more than just syntax — it’s a tool to create opportunities and shape the future.</p>
-     <p>We’re a modern <em>web development training platform</em> built to equip learners with practical, industry-ready skills. Through hands-on projects, expert mentorship, and a supportive community, we help beginners become professionals and professionals become innovators.</p>
-     <p>OUR MISSION is to To empower the next generation of job-ready developers by combining affordability, accessibility, and authenticity in tech education.</p>
-     <p>Please contact us via email for any questions about Blueprint Coder and its services, visit our contact section<br> <b><a href="mailto:chukwus618@gmail.com">chukwus618@gmail.com</a></b></p>
-   </section>
-   <section id="rights-ownership">
-     <h3>Rights and Ownership</h3>
-     <p>The <strong> Blueprint Coder</strong> name, logo, and all related branding elements are official trademarks of Blueprint Coder. These symbols represent our identity, values, and commitment to delivering quality education.</p>
-     <p>We encourage learners, partners, and collaborators to share our vision and values, but please respect our intellectual property. If you’d like to reference or collaborate using our brand, kindly contact us for approval.</p>
-     <img src="assets/images/Blueprint-logo.svg" alt="Blueprint-Coder logo" id="logo2">
-     <p>Official logo of Blueprint Coder</p>
-   </section>
-   <section id="impact-glance">
-     <h4>Impact at a Glance</h4>
-     <p>Below are two images that clearly state our impact as a blueprint</p>
-     <figure id="impact-container">
-       <figure class="impact-imgcontainer">
-         <img src="assets/images/childrenbootcamp.jpg" alt="children bootcamp pic" class="impact-img">
-         <figcaption>Bootcamp Awards</figcaption>
-         <p>Blueprint Coder first children bootcamp in South Africa</p>
-       </figure>
-       <figure class="impact-imgcontainer">
-         <img src="assets/images/giftinglaptop.png" alt="teens receiving laptops" class="impact-img">
-         <figcaption>Gifting Laptops</figcaption>
-         <p>Giving out free laptops to youths in Africa</p>
-       </figure>
-     </figure>
-  </main>
+  <section id="hero-wrapper">
+    <header>
+      <aside>
+       <img src="assets/icons/facebook-logo.png" alt="Facebook-logo">
+       <img src="assets/icons/x.svg" alt="X-logo">
+       <p>English</p>
+       <button type="button">My Page</button>
+       <button type="button">Logout</button>
+      </aside>
+      <svg id="hamburger" viewBox="0 0 100 100" width="40">
+       <g class="hamburger-lines">
+         <rect class="line-top" width="80" height="10" x="10" y="25" rx="5"></rect>
+         <rect class="line-middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+         <rect class="line-bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+       </g>
+      </svg>
+      <nav id="mobile-nav">
+        <a href="index.html" id="logo">
+          <img src="assets/images/Blueprint-logo.svg" alt="Blueprint-Coder logo">
+        </a>
+        <button type="button" aria-label="close-menu" title="exit" id="close-btn"><img src="assets/icons/close-icon.svg" alt="close"></button>
+        <ul>
+          <li class="nav-links"><a href="index.html">Home</a></li>
+          <li class="nav-links"><a href="about.html">About</a></li>
+          <li class="nav-links"><a href="#course-section">Courses</a></li>
+          <li class="nav-links"><a>Blogs</a></li>
+          <li class="nav-links"><a>Contact</a></li>
+        </ul>
+        <button id="nav-signupbtn" type="button" aria-label="Sign-Up">Sign Up</button>
+      </nav>
+    </header>
+    <main>
+     <p id="greetingpara">Hello! Developers</p>
+     <h1>Blueprint Coder</h1>
+     <hr class="line">
+     <section id="who-we-are">
+       <p>At<strong> 🌍 Blueprint Coder</strong>, we believe coding is more than just syntax — it’s a tool to create opportunities and shape the future. We’re a modern <em>web development training platform</em> built to equip learners with practical, industry-ready skills. Through hands-on projects, expert mentorship, and a supportive community, we help beginners become professionals and professionals become innovators.<br> OUR MISSION is to To empower the next generation of job-ready developers by combining affordability, accessibility, and authenticity in tech education.</p>
+       <p>Please contact us via email for any questions about Blueprint Coder and its services, visit our contact section<br> <b><a href="mailto:chukwus618@gmail.com" id="mail-link">chukwus618@gmail.com</a></b></p>
+     </section>
+    </main>
+  </section>
+  <section id="rights-ownership">
+    <h3>Rights and Ownership</h3>
+    <hr class="line">
+    <p>The <strong> Blueprint Coder</strong> name, logo, and all related branding elements are official trademarks of Blueprint Coder. These symbols represent our identity, values, and commitment to delivering quality education.</p>
+    <p>We encourage learners, partners, and collaborators to share our vision and values, but please respect our intellectual property. If you’d like to reference or collaborate using our brand, kindly contact us for approval.</p>
+    <figure id="logo2">
+      <img src="assets/images/Blueprint-logo.svg" alt="Blueprint-Coder logo">
+    </figure>
+    <p>Official logo of Blueprint Coder</p>
+  </section>
+  <hr id="divider">
+  <section id="impact-glance">
+    <h4>Impact at a Glance</h4>
+    <hr class="line">
+    <p>Below are two images that clearly state our impact as a blueprint</p>
+    <figure id="impact-container">
+      <figure class="impact-imgcontainer">
+        <img src="assets/images/childrenbootcamp.jpg" alt="children bootcamp pic" class="impact-img">
+        <figure class="img-overlay"></figure>
+        <figcaption class="overlay-text">Bootcamp Awards</figcaption>
+        <p>Blueprint Coder first children bootcamp in South Africa</p>
+      </figure>
+      <figure class="impact-imgcontainer">
+        <img src="assets/images/giftinglaptop.png" alt="teens receiving laptops" class="impact-img">
+        <figure class="img-overlay"></figure>
+        <figcaption class="overlay-text">Gifting Laptops</figcaption>
+        <p>Giving out free laptops to youths in Africa</p>
+      </figure>
+    </figure>
+  </section>
   <footer>
     <section id="partners-container">
-      <h5>Partners</h5>
+      <h6>Partners</h6>
       <hr class="line">
       <figure id="partner-logos">
         <img src="assets/images/mindbyte.svg" alt="Mindbyte-logo">
