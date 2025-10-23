@@ -7,34 +7,82 @@ body {
 }
 
 main {
-  background-color: #f8f8ff;
-  padding: 0 30px 50px;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255 255 255 / 70%);
+  padding: 30px 15px 50px;
+}
+
+#hero-wrapper {
+  background-image: url("assets/images/hero-pagebg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #greetingpara {
   color: #ec5242;
-  font-size: 25px;
+  font-size: 30px;
   padding-top: 50px;
+  margin: 0 0 10px;
+}
+
+@font-face {
+  font-family: Cocogoose;
+  src: url("fonts/Cocogoose-Pro-Regular-trial.ttf") format("truetype");
+  font-weight: bold;
+  font-display: swap;
 }
 
 h1 {
-  font-size: 45px;
-  background: linear-gradient(90deg, red, #272a31, #ec5242, #1b1d23, red);
+  font-family: Cocogoose, sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  background-image: url("assets/images/h1bg.jpg");
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  text-transform: uppercase;
+  margin: 0;
 }
 
-header p ~ p {
-  text-align: center;
-  color: #1b1d23;
-  font-size: 18px;
+h2 {
+  color: #272a31;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 25px 0 0;
+}
+
+main h2 + p {
+  font-size: 15px;
+  margin: 0;
+  color: #272a31;
+}
+
+.tutor-details p:first-of-type {
+  color: #ec5242;
+  margin: 10px 0;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.tutor-details p:last-of-type {
+  color: #272a31;
+  font-size: 11px;
+}
+
+#hero-info p {
+  color: #272a31;
+  font-size: 12px;
+}
+
+#hero-info {
+  padding: 10px;
   border: 2px solid #fff;
+  display: inline-block;
 }
 
 .line {
   width: 45px;
-  border: 2px solid #ec5242;
+  border: 1px solid #ec5242;
   border-radius: 100px;
   margin: auto;
 }
@@ -66,11 +114,12 @@ header p ~ p {
   margin-bottom: 35px;
 }
 
-#course-section > h2 {
+#course-section > h3 {
   text-align: center;
   color: #fff;
   margin-top: 0;
   margin-bottom: 12px;
+  font-size: 1.3em;
 }
 
 #course-description {
@@ -79,7 +128,7 @@ header p ~ p {
   margin: auto;
 }
 
-#course-section h3 {
+#course-section h4 {
   color: #ec5242;
   align-self: center;
   font-size: medium;
@@ -147,7 +196,7 @@ header p ~ p {
   padding: 55px 0 10px;
 }
 
-#featured-tutors > h3 {
+#featured-tutors h5 {
   text-align: center;
   color: #272a31;
   margin: 0;
@@ -247,18 +296,6 @@ header p ~ p {
   flex: 1;
 }
 
-.tutor-details p:first-of-type {
-  color: #ec5242;
-  margin: 10px 0;
-  font-size: 11px;
-  font-style: italic;
-}
-
-.tutor-details p:last-of-type {
-  color: #272a31;
-  font-size: 11px;
-}
-
 strong {
   font-weight: bold;
   color: #272a31;
@@ -278,8 +315,29 @@ footer {
 }
 
 @media (min-width: 1200px) {
+  main {
+    padding: 150px 350px 100px 150px;
+  }
+
+  h1 {
+    font-size: 4.5em;
+  }
+
   #greeting-para {
     padding-top: 200px;
+    font-size: 40px;
+  }
+
+  footer p {
+    color: #272a31;
+  }
+
+  main h2 + p {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 2.5em;
   }
 
   #course-section {
@@ -334,10 +392,6 @@ footer {
     padding-right: 150px;
   }
 
-  footer p {
-    color: #272a31;
-  }
-
   .tutor-details p:last-of-type,
   .tutor-details p:first-of-type {
     font-size: 14px;
@@ -369,10 +423,6 @@ footer {
     display: none;
   }
 
-  main {
-    padding: 150px 150px 100px;
-  }
-
   footer {
     display: block;
   }
@@ -401,5 +451,12 @@ footer {
 
   footer {
     display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255 255 255 / 80%);
   }
 }
