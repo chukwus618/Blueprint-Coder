@@ -11,7 +11,7 @@ html {
 #hamburger {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
-  margin: 8px 8px 8px 25px;
+  margin: 8px 8px 8px 15px;
 }
 
 aside {
@@ -118,7 +118,7 @@ aside {
   }
 
   #logo {
-    display: block;
+    display: inline-block;
     margin: auto;
   }
 
@@ -140,10 +140,9 @@ aside {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    height: auto;
-    max-height: 60px;
-    padding: 10px;
+    height: 80px;
     position: relative;
+    box-sizing: border-box;
   }
 
   #mobile-nav ul li a {
@@ -166,18 +165,12 @@ aside {
 
   #nav-signupbtn {
     width: 10%;
-    padding: 10px;
+    padding: 12px;
     display: block;
     margin: auto;
     font-size: 18px;
-    border-radius: 10px;
-    border: none;
+    border: 5px solid #ec5242;
     background-color: inherit;
-    color: inherit;
-  }
-
-  #nav-signupbtn:hover {
-    border: 3px solid #ec5242;
     color: #ec5242;
     cursor: pointer;
   }
@@ -196,7 +189,7 @@ aside {
     gap: 20px;
     height: 40px;
     box-sizing: border-box;
-    padding-right: 90px;
+    padding-right: 60px;
   }
 
   aside button {
@@ -204,6 +197,7 @@ aside {
     border: none;
     cursor: pointer;
     color: #fff;
+    font-size: 16px;
   }
 
   aside p {
