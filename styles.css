@@ -7,8 +7,6 @@ body {
 }
 
 main {
-  backdrop-filter: blur(5px);
-  background-color: rgba(255 255 255 / 70%);
   padding: 30px 15px 50px;
 }
 
@@ -16,6 +14,11 @@ main {
   background-image: url("assets/images/hero-pagebg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#hero-overlay {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255 255 255 / 80%);
 }
 
 #greetingpara {
@@ -434,15 +437,15 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   main {
-    padding: 100px 150px 100px 60px;
+    padding: 150px 150px 150px 60px;
   }
 
   .tutor-info {
-    padding: 50px;
+    padding: 60px;
   }
 
   .course-cards {
-    margin: 50px;
+    margin: 60px;
   }
 
   .course-img {
@@ -451,12 +454,5 @@ footer {
 
   footer {
     display: block;
-  }
-}
-
-@media (max-width: 767px) {
-  header {
-    backdrop-filter: blur(5px);
-    background-color: rgba(255 255 255 / 80%);
   }
 }
