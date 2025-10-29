@@ -119,7 +119,7 @@ aside {
 
   #logo {
     display: inline-block;
-    margin: auto;
+    padding-left: 150px;
   }
 
   aside img {
@@ -206,11 +206,11 @@ aside {
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-  #nav-signupbtn {
-    display: none;
-  }
-
   #mobile-nav ul {
     gap: 20px;
+  }
+
+  #logo {
+    padding-left: 60px;
   }
 }
