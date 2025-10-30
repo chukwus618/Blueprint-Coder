@@ -313,10 +313,6 @@ strong {
   display: flex;
 }
 
-footer {
-  display: none;
-}
-
 @media (min-width: 1200px) {
   main {
     padding: 150px 350px 100px 150px;
