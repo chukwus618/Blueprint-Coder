@@ -91,9 +91,9 @@ main h2 + p {
 }
 
 .course-img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
+  width: auto;
+  height: 20px;
+  object-fit: cover;
   object-position: center;
   align-self: center;
 }
@@ -135,6 +135,7 @@ main h2 + p {
   color: #ec5242;
   align-self: center;
   font-size: medium;
+  margin: 0;
 }
 
 #signup-btn {
@@ -313,58 +314,37 @@ strong {
   display: flex;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   main {
-    padding: 150px 350px 100px 150px;
-  }
-
-  h1 {
-    font-size: 4.5em;
-  }
-
-  #greeting-para {
-    padding-top: 200px;
-    font-size: 40px;
-  }
-
-  footer p {
-    color: #272a31;
-  }
-
-  main h2 + p {
-    font-size: 20px;
-  }
-
-  h2 {
-    font-size: 2.5em;
-  }
-
-  #course-section {
-    padding: 80px 150px;
+    padding: 150px 150px 150px 60px;
   }
 
   #course-container {
-    display: flex;
-    gap: 5px;
-    justify-content: space-around;
-    align-items: stretch;
-    margin: auto;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #course-section {
+    padding: 80px 60px;
   }
 
   .course-cards {
-    flex: 1;
-    justify-items: center;
-    align-items: center;
-    gap: 0;
-    margin: 0;
+    display: flex;
     flex-direction: column;
-    box-sizing: border-box;
     text-align: center;
+    padding: 20px 10px;
   }
 
   .course-cards:hover {
     border: 1px solid #fff;
+  }
+
+  .course-img {
+    height: 30px;
+  }
+
+  #course-description {
+    margin: 0;
   }
 
   #signup-btn {
@@ -386,14 +366,7 @@ strong {
   #tutors-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    padding-left: 150px;
-    padding-right: 150px;
-  }
-
-  .tutor-details p:last-of-type,
-  .tutor-details p:first-of-type {
-    font-size: 14px;
+    padding: 0 60px;
   }
 
   .tutorimage-container::before {
@@ -425,30 +398,68 @@ strong {
   footer {
     display: block;
   }
+}
+
+@media (min-width: 1200px) {
+  main {
+    padding: 150px 350px 100px 150px;
+  }
+
+  h1 {
+    font-size: 4.5em;
+  }
+
+  #greeting-para {
+    padding-top: 200px;
+    font-size: 40px;
+  }
+
+  footer p {
+    color: #272a31;
+  }
+
+  main h2 + p {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  #course-section {
+    padding: 80px 150px;
+  }
 
   #main-footer {
     background-color: #fff;
   }
-}
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  main {
-    padding: 150px 150px 150px 60px;
-  }
-
-  .tutor-info {
-    padding: 60px;
+  #course-container {
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0;
+    flex-wrap: wrap;
   }
 
   .course-cards {
-    margin: 60px;
+    flex: 1;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
   }
 
-  .course-img {
-    height: 50px;
+  #tutors-container {
+    padding: 0 150px;
+    gap: 10px;
   }
 
-  footer {
-    display: block;
+  .tutor-details p:last-of-type,
+  .tutor-details p:first-of-type {
+    font-size: 14px;
   }
 }
