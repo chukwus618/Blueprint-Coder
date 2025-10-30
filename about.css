@@ -65,9 +65,9 @@ main {
 }
 
 #logo2 {
-  width: 100%;
   border: 1px solid #d3d3d3;
   padding: 30px;
+  display: inline-block;
 }
 
 #logo2 img {
@@ -156,7 +156,7 @@ footer p {
 #who-we-are p:first-of-type {
   background-color: #fff;
   border: 1px solid #d3d3d3;
-  padding: 10px;
+  margin: 15px;
 }
 
 :is(#rights-ownership, #impact-glance) {
@@ -224,11 +224,7 @@ footer p {
   }
 
   #rights-ownership {
-    padding: 100px 200px 0;
-  }
-
-  #logo2 {
-    width: 70%;
+    padding: 100px 200px 30px;
   }
 
   #logo2 img {
@@ -263,6 +259,18 @@ footer p {
 
 @media (min-width: 768px) and (max-width: 1199px) {
   main {
-    padding: 100px 80px 0;
+    padding: 150px 60px 100px;
+  }
+
+  #who-we-are p:first-of-type {
+    margin: 0;
+  }
+
+  #rights-ownership {
+    padding: 100px 60px 30px;
+  }
+
+  #impact-container {
+    padding: 0 60px;
   }
 }
