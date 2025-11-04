@@ -157,6 +157,7 @@ footer p {
   background-color: #fff;
   border: 1px solid #d3d3d3;
   margin: 15px;
+  padding: 30px 20px;
 }
 
 :is(#rights-ownership, #impact-glance) {
