@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blueprint Coder</title>
+  <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script defer src="header.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="footer.js"></script>
+</head>
+<body>
+ <section id="hero-wrapper">
+   <section id="hero-overlay">
+      <header>
+        <svg id="hamburger" viewBox="0 0 100 100" width="40">
+          <g class="hamburger-lines">
+            <rect class="line-top" width="80" height="10" x="10" y="25" rx="5"></rect>
+            <rect class="line-middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+            <rect class="line-bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+          </g>
+        </svg>
+        <aside>
+          <img src="assets/icons/facebook-logo.png" alt="Facebook-logo">
+          <img src="assets/icons/x.svg" alt="X-logo">
+          <p>English</p>
+          <button type="button">My Page</button>
+          <button type="button">Logout</button>
+        </aside>
+        <nav id="mobile-nav">
+          <a href="index.html" id="logo">
+            <img src="assets/images/Blueprint-logo.svg" alt="Blueprint-Coder logo">
+          </a> 
+          <button type="button" aria-label="close-menu" title="exit" id="close-btn"><img src="assets/icons/close-icon.svg" alt="close"></button>
+          <ul>
+            <li class="nav-links"><a href="index.html">Home</a></li>
+            <li class="nav-links"><a href="about.html">About</a></li>
+            <li class="nav-links"><a href="#course-section">Courses</a></li>
+            <li class="nav-links"><a>Sponsor</a></li>
+            <li class="nav-links"><a>Contact</a></li>
+          </ul>
+          <button id="nav-signupbtn" type="button" aria-label="Sign-Up">Sign Up</button>
+        </nav>
+      </header>
+      <main>
+        <p id="greetingpara">Hello! Developers</p>
+        <h1>Welcome to Blueprint Coder</h1>
+        <section id="hero-info">
+          <p>A platform that gives you more than lessons — we give you the blueprint to code, create, and launch your future in tech.</p>
+          <p>You are at the right place to start your coding journey.<br><i>One of Nigeria's top tech-tutoring and online coding academy 💻🎓 </i></p>
+        </section>
+        <h2>2025.10.22(WED) ~ 23(THUR)</h2>
+        <p>@Blueprint-Coder Academy, Nigeria and more.</p>
+      </main>
+   </section>
+ </section>
+  <section id="course-section">
+    <h3>Our Courses</h3>
+    <hr class="line">
+   <section id="course-container">
+   </section>
+  </section>
+  <section id="featured-tutors">
+   <h5>Featured Tutors</h5>
+   <hr class="line">
+   <section id="tutors-container">
+   </section>
+  </section>
+  <footer>
+    <section id="partners-container">
+      <h6>Partners</h6>
+      <hr class="line">
+      <figure id="partner-logos">
+        <img src="assets/images/mindbyte.svg" alt="Mindbyte-logo">
+        <img src="assets/images/Techtitans-logo.svg" alt="Tech-Titans-logo">
+        <img src="assets/images/SmartPrime-logo.svg" alt="Smartprime-logo">
+        <img src="assets/images/midasbox.svg" alt="Midasbox-logo">
+      </figure>
+    </section>
+      <section id="main-footer">
+        <img src="assets/images/footerlogo.svg" alt="Blueprint-logo">
+        <section id="trademark-info">
+         <p>© <span id="current-year"></span> Blueprint Coder. All Rights Reserved.</p>
+         <p>Blueprint is a company that is registered and recognized globally. Anyone who steals or uses her trademarks without permission is liable to face the consequences.</p>
+        </section>
+      </section>
+  </footer>
+  </body>
+  </html>

@@ -1,0 +1,277 @@
+* {
+  font-family: Lato, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#greetingpara {
+  color: #ec5242;
+  font-size: 25px;
+  margin: 0 0 10px;
+}
+
+@font-face {
+  font-family: Cocogoose;
+  src: url("fonts/Cocogoose-Pro-Regular-trial.ttf") format("truetype");
+  font-weight: bold;
+  font-display: swap;
+}
+
+h1 {
+  font-family: Cocogoose, sans-serif;
+  font-size: 2.5em;
+  color: #ec5242;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.line {
+  width: 20px;
+  border: 1px solid #ec5242;
+  border-radius: 100px;
+  margin: auto;
+}
+
+h1 + .line {
+  display: none;
+}
+
+p {
+  font-size: 0.8em;
+  color: #272a31;
+  text-align: center;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+#mail-link {
+  color: #272a31;
+}
+
+#hero-wrapper {
+  background-image: url("assets/images/hero-pagebg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hero-overlay {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255 255 255 / 80%);
+}
+
+main {
+  padding: 30px 0 50px;
+}
+
+#logo2 {
+  border: 1px solid #d3d3d3;
+  padding: 30px;
+  display: inline-block;
+}
+
+#logo2 img {
+  width: auto;
+  display: block;
+  height: 50px;
+  margin: auto;
+}
+
+#divider {
+  margin: 30px 0 10px;
+  border: 1px solid #d3d3d3;
+}
+
+footer p {
+  color: #272a31;
+}
+
+#impact-glance {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#impact-container {
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay-text,
+.impact-imgcontainer p {
+  position: absolute;
+  text-align: center;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 0 10px;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(236 82 66 / 80%);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.overlay-text {
+  top: 40%;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.impact-imgcontainer p {
+  top: 60%;
+  font-size: 1em;
+}
+
+.impact-imgcontainer:hover .img-overlay,
+.impact-imgcontainer:hover .overlay-text,
+.impact-imgcontainer:hover p {
+  opacity: 0;
+}
+
+#logo2 + p {
+  color: red;
+  font-weight: bold;
+}
+
+:is(h2, h3, h4) {
+  text-align: center;
+  font-size: 1.5em;
+  color: #272a31;
+  font-weight: 500;
+}
+
+#who-we-are p:first-of-type {
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  margin: 15px;
+  padding: 30px 20px;
+}
+
+:is(#rights-ownership, #impact-glance) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 50px 0 0;
+}
+
+.impact-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.impact-imgcontainer {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  height: 250px;
+  margin: auto;
+}
+
+#main-footer img:last-of-type {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  main {
+    padding: 200px 200px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #greetingpara {
+    display: none;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 4.5em;
+  }
+
+  h1 + .line {
+    display: block;
+  }
+
+  :is(h2, h3, h4) {
+    font-size: 2em;
+  }
+
+  footer p {
+    color: #fff;
+  }
+
+  #who-we-are p:last-of-type {
+    margin-top: 10px;
+  }
+
+  #rights-ownership {
+    padding: 100px 200px 30px;
+  }
+
+  #logo2 img {
+    height: 100px;
+  }
+
+  .impact-imgcontainer {
+    height: 350px;
+  }
+
+  #impact-container {
+    flex-direction: row;
+  }
+
+  #main-footer img:first-of-type,
+  #partners-container {
+    display: none;
+  }
+
+  #main-footer img:last-of-type {
+    display: block;
+  }
+
+  #main-footer {
+    background-color: #272a31;
+  }
+
+  footer {
+    padding: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  main {
+    padding: 150px 60px 100px;
+  }
+
+  #who-we-are p:first-of-type {
+    margin: 0;
+  }
+
+  #rights-ownership {
+    padding: 100px 60px 30px;
+  }
+
+  #impact-container {
+    padding: 0 60px;
+  }
+}
